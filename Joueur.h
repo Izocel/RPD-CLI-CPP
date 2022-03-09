@@ -14,6 +14,7 @@ class Joueur :
 private:
     const Role* m_classe;
     int m_ressource;
+
     Arme* m_arme{ new Arme() };
     Armure* m_armure{ new Armure() };
     vector<Item*> m_inventaire{ vector<Item*>(10)};

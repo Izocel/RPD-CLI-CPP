@@ -27,7 +27,7 @@ Joueur debutPartie();
 /// </summary>
 /// <param name="min">Le minimum</param>
 /// <param name="max">Le maximum</param>
-/// <returns></returns>
+/// <returns>Le choix</returns>
 int prendreChoix(int min, int max);
 
 template <typename T, typename R>
@@ -51,7 +51,7 @@ void gameLoop();
 /// <summary>
 /// Fait le combat entre le joueur et l'ennemi
 /// </summary>
-/// <param name="joueur"></param>
+/// <param name="joueur">Le joueur</param>
 void combat(Joueur& joueur);
 
 /// <summary>
@@ -66,13 +66,13 @@ Ennemi genererEnnemi(unsigned int& niveauJoueur);
 /// <summary>
 /// Calcule l'xp que le joueur re�oit d'un ennemi
 /// </summary>
-/// <param name="joueur"></param>
-/// <param name="ennemi"></param>
-/// <returns></returns>
+/// <param name="joueur">Le joueur</param>
+/// <param name="ennemi">l'ennemi</param>
+/// <returns>Les xp</returns>
 int calculXP(int joueur, int ennemi);
 
 /// <summary>
-/// Affiche un petit texte avec delai simulat la fouille d'un ennemi.
+/// Affiche un petit texte avec delai simulant la fouille d'un ennemi.
 /// </summary>
 /// <param name="lootSize">La quantite laisser par l'ennemi</param>
 void introGestionLoot(size_t& lootSize);
@@ -126,7 +126,7 @@ const Armure armureHasard();
 /// Ce lancer determine si l'item sera attribuer à l'ennemi selon le dropRate;
 /// </summary>
 /// <param name="size">Le nombre maximum possible d'item a tenter</param>
-/// <returns></returns>
+/// <returns>Le vecteur drop</returns>
 vector<Item*> newVecteurDrop(const int& size);
 
 /// <summary>

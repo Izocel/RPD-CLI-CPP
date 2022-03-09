@@ -67,7 +67,7 @@ public:
 	/// <summary>
 	/// Renvoit true si le personnage a >=1 point de vie
 	/// </summary>
-	/// <returns></returns>
+	/// <returns>True si est vivant, sinon false</returns>
 	const bool estVivant() const;
 
 

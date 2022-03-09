@@ -442,6 +442,7 @@ void combat(Joueur& joueur)
         system("CLS");
         if (choix == 1)
         {
+            system("CLS");
             //attaquer l'ennemi
             string affichage{ to_string(joueur.attaquer(ennemi)) + " degats." };
             cout << affichageCombat(joueur, ennemi, joueur.getName() + " attaque pour " + affichage);
@@ -451,6 +452,7 @@ void combat(Joueur& joueur)
             string affichage{joueur.action(ennemi, actionKeys[choix-2])};
             cout << affichageCombat(joueur, ennemi, affichage);
         }
+
         if (ennemi.getHp() > 0)
         {
             cout << "C'est maintenant le tour de votre adversaire!\n";

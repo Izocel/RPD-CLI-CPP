@@ -6,6 +6,8 @@
 
 namespace Constante {
 
+	//Constantes pour l'affichage
+	
 	const int LARGEURMENU = 165;
 
 	const string OPENINGLINE{
@@ -45,6 +47,9 @@ namespace Constante {
 
 	//Delai pour affichage
 	const int DELAY{ 16 };
+
+
+	//Constantes pour l'augmentation des stats du joueur
 	const int ATTACK_AUGM{ 10 };
 	const int DEFENSE_AUGM{ 10 };
 
@@ -200,7 +205,13 @@ namespace Constante {
 		{"Recuperation de ressource", {"Recuperation de ressource", 0, 0, 60, 0, 0}},
 	};
 
+	/// <summary>
+	/// Fonction pour définir la table d'xp selon une formule définie
+	/// </summary>
+	/// <returns>La table</returns>
 	const vector<int> defineTableXP();
+
+
 	const vector<int> TABLE_XP { defineTableXP() };
 
 	/// <summary>

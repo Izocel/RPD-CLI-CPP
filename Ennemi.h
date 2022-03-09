@@ -16,7 +16,7 @@ private:
     vector<Item*> m_dropVector{};
 
     /// <summary>
-    /// RRenvoit une valeur entre 0 et +uintMax des degat brutes moins la deffense.
+    /// Renvoit une valeur entre 0 et +uintMax des degat brutes moins la deffense.
     /// </summary>
     /// <param name="degatBrute">Les degats brutes</param>
     /// <returns>Le dommage recu reel</returns>
@@ -28,10 +28,10 @@ public:
     /// <summary>
     /// Permet d'obtenir un Ennemi deterministe.
     /// </summary>
-    /// <param name="nom"></param>
-    /// <param name="hp"></param>
-    /// <param name="hpMax"></param>
-    /// <param name="niveau"></param>
+    /// <param name="nom">Nom de l'ennemi</param>
+    /// <param name="hp">HP de base</param>
+    /// <param name="hpMax">HP max</param>
+    /// <param name="niveau">Niveau de base</param>
     Ennemi(const string nom, const int hp, const int hpMax, const int niveau);
 
     /// <summary>
