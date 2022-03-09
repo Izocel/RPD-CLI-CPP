@@ -1,0 +1,10 @@
+.history/
+.vscode/
+.vs/
+dev/
+x64/
+*.resx
+*.sln
+*.exe
+*.pdb
+*.vcxproj*
